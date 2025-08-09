@@ -13,11 +13,11 @@ if (!isset($data["prompt"])) {
 }
 
 // Configura a chamada para a API do Ollama
-$url = "http://localhost:11434/api/generate";
+$url = "http://host.docker.internal:11434/api/generate";
 $body = json_encode([
-    "model" => "mistral", // Escolha o modelo: mistral, llama2, openhermes...
+    "model" => $data['model'], 
     "prompt" => $data["prompt"],
-    "stream" => false // Retorna o texto completo de uma vez
+    "stream" => false
 ]);
 
 $options = [

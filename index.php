@@ -20,7 +20,11 @@
     </div>
 
     <button id="gerarPostBtn" class="btn btn-primary w-100">Gerar Post</button>
-
+    <div class="row align-items-center gap-3">
+    <button id="gerarPostBtn" class="btn btn-primary w-100 col ">Gerar Post</button>
+    <select id="gerar_Models" class="btn btn-primary w-100 col ">
+    </select>
+    </div>
     <div class="text-center mt-3">
         <div id="loadingSpinner" class="spinner-border text-primary d-none" role="status">
             <span class="visually-hidden">Gerando...</span>
@@ -29,7 +33,7 @@
 
     <h3 class="mt-4">Resultado:</h3>
     <div id="resultado" class="border p-3 rounded bg-light"></div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
